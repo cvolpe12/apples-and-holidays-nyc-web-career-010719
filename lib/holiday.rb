@@ -59,9 +59,9 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.collect do |season, holiday|
-    season.capitalize!.collect do |holiday, supplies|
-      holiday.to_s.split.capitalize!.join.collect do |supplies|
-        suppies.to_s.split.capitalize!.join
+    season.capitalize.collect do |holiday, supplies|
+      holiday.to_s.split.capitalize.join.collect do |supplies|
+        suppies.to_s.split.capitalize.join
       end
     end
   end
